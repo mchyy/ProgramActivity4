@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(44, 36, 36, 0.671)),url("chinese\ zodiacs.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(44, 36, 36, 0.671)),url("zodiac.jpg");
+    color: black;
+    font-style: bold;
+    font-family: "furtura";
+    font-size: larger;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.calendar{
+    display: flex;
+    margin-top: 90px;
+    flex-wrap: wrap;
+    font-size: x-large;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.month{
+    background: transparent;
+    top: 150px;
+    border: 3px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.weeks,
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+    gap: 3px;
+    margin: 5px;
+}
+
+li{
+    background-color: white;
+    border: .5px solid black;
+    padding: 3px;
+    text-align: center;
+    height: 30px;
+}
+button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: aliceblue;
+    background-color: white;
+    border: 1px solid rgb(255, 253, 253);
+    padding: 10px;
+    border-radius: 18px;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background: transparent;
+    color: black;
+    transition: 0.5s;
+}

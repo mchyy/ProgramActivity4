@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(44, 36, 36, 0.671)),url("capricorn.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: Courier;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-style: Bold;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.title{
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    font-family: 'Futura';
+    text-transform: uppercase;
+}
+.des{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Futura';
+    font-size: xx-large;
+}
+button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: aliceblue;
+    background-color: white;
+    border: 1px solid rgb(255, 253, 253);
+    padding: 10px;
+    border-radius: 18px;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(228, 226, 226);
+    color: white;
+    transition: 0.5s;
+}
